@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, FlatList, Alert, Button } from 'react-native';
+import axios from 'axios';
 import CategoryListItem from '../components/CategoryListItem';
 
 export default class Categories extends React.Component {
@@ -20,6 +21,10 @@ export default class Categories extends React.Component {
 		};
 	}
 
+	componentDidMount() {
+
+	}
+
 	render() {
 		const { navigation } = this.props;
 		const { categories } = this.state;
@@ -27,7 +32,10 @@ export default class Categories extends React.Component {
 			<FlatList
 				data={categories}
 				renderItem={({ item }) => (
-					<CategoryListItem category={item} onPress={() => navigation.navigate('Category', { categoryName: item.name })} />
+					<CategoryListItem
+						category={item}
+						onPress={() => navigation.navigate('Category', { categoryName: item.name })}
+					/>
 				)}
 				keyExtractor={(item) => `${item.id}`}
 				contentContainerStyle={styles.scroll}

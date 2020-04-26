@@ -1,0 +1,23 @@
+{
+	"categories": [
+		{ "id": 1, "name": "loi" },
+		{ "id": 2, "name": "hoa" },
+		{ "id": 3, "name": "linh" },
+		{ "id": 4, "name": "teo" },
+		{ "id": 5, "name": "teo" }
+	],
+	"products": [
+		{
+			"id": 1,
+			"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/LEGO-01.jpg",
+			"name": "teo",
+			"price": "5000"
+		},
+		{
+			"id": 2,
+			"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/LEGO-01.jpg",
+			"name": "loi",
+			"price": "6000"
+		}
+	]
+}
